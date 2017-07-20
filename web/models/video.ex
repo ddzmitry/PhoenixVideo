@@ -11,12 +11,15 @@ defmodule PhoenixVideoStream.Video do
     timestamps()
   end
 
+  @required_fields ~w(title video_file)
+  @optional_fields ~w()
+
   @doc """
   Builds a changeset based on the `struct` and `params`.
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title, :filename, :content_type, :path])
+    |> cast(params, @required_fields, @optional_fields)
     |> validate_required([:title, :filename, :content_type, :path])
   end
 end
