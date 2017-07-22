@@ -7,4 +7,6 @@ To start this app:
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
 
-Visit [`localhost:4000`](http://localhost:4000) in your browser.
+Visit [`localhost:4000`](http://localhost:4000) in your browser for the index
+
+Visit [`localhost:4000/videos`](http://localhost:4000/videos) in your browser for a list of videos
